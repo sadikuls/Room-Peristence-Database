@@ -3,10 +3,12 @@ package com.sadikul.stepstoroom;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 @Entity
 public class User {
     @PrimaryKey
+    @NonNull
     private int uid;
 
     @ColumnInfo(name = "username")
@@ -14,6 +16,11 @@ public class User {
 
     @ColumnInfo(name = "email")
     private String userEmail;
+
+    public User(String userName,String userEmail){
+        this.userName = userName;
+        this.userEmail = userEmail;
+    }
 
     public int getId() {
         return uid;
