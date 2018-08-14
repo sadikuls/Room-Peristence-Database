@@ -18,10 +18,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
     class UserViewHolder extends RecyclerView.ViewHolder {
         private TextView tvName;
+        private TextView tvEmail;
 
         private UserViewHolder(View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.name);
+            tvEmail = itemView.findViewById(R.id.email);
         }
     }
 
@@ -42,7 +44,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     public void onBindViewHolder(UserViewHolder holder, int position) {
         if (mUsers != null) {
             User current = mUsers.get(position);
-            holder.tvName.setText(current.getUserName());
+            holder.tvName.setText(current.getUid()+" "+current.getUserName());
+            holder.tvEmail.setText(current.getUserEmail());
         } else {
             // Covers the case of data not being ready yet.
             holder.tvName.setText("No user");
@@ -51,7 +54,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
 
 
-    void setWords(List<User> users){
+    public void setUsers(List<User> users){
         mUsers = users;
         notifyDataSetChanged();
     }

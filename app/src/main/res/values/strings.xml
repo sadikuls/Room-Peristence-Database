@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Steps To Room</string>
+    <string name="button_save">save</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="empty_not_saved">Empty field</string>
 </resources>

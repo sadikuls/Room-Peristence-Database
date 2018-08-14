@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 
 @Entity
 public class User {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     private int uid;
 
@@ -22,11 +22,11 @@ public class User {
         this.userEmail = userEmail;
     }
 
-    public int getId() {
+    public int getUid() {
         return uid;
     }
 
-    public void setId(int id) {
+    public void setUid(int id) {
         this.uid = id;
     }
 
