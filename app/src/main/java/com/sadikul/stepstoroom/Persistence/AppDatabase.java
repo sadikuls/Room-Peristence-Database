@@ -1,15 +1,12 @@
-package com.sadikul.stepstoroom.Utils;
+package com.sadikul.stepstoroom.Persistence;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
-import android.os.AsyncTask;
-import android.support.annotation.NonNull;
 
-import com.sadikul.stepstoroom.User;
-import com.sadikul.stepstoroom.UserDao;
+import com.sadikul.stepstoroom.Persistence.Dao.UserDao;
+import com.sadikul.stepstoroom.Persistence.User_Table.User;
 
 /*created room database by extending RoomDatabase class . This is an abstract class that contains
 abstract method that will return dao object
@@ -19,7 +16,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract UserDao userDao();
     public static AppDatabase mInstance;
 
-    static AppDatabase getDatabase(Context context) {
+    public static AppDatabase getDatabase(Context context) {
         if (mInstance == null) {
             synchronized (AppDatabase.class) {
                 if (mInstance == null) {

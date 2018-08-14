@@ -1,12 +1,12 @@
-package com.sadikul.stepstoroom.ViewModel;
+package com.sadikul.stepstoroom.Persistence.ViewModel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.sadikul.stepstoroom.User;
-import com.sadikul.stepstoroom.Utils.UserRepository;
+import com.sadikul.stepstoroom.Persistence.User_Table.User;
+import com.sadikul.stepstoroom.Persistence.UserRepository;
 
 import java.util.List;
 

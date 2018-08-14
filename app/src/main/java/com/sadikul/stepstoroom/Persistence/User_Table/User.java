@@ -1,4 +1,4 @@
-package com.sadikul.stepstoroom;
+package com.sadikul.stepstoroom.Persistence.User_Table;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

@@ -1,15 +1,10 @@
 package com.sadikul.stepstoroom.Activities;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
-import android.arch.persistence.db.SupportSQLiteDatabase;
-import android.arch.persistence.room.RoomDatabase;
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,8 +19,8 @@ import static com.sadikul.stepstoroom.Utils.Constants.NEW_USER_ACTIVITY_REQUEST_
 
 import com.sadikul.stepstoroom.Adapters.UserAdapter;
 import com.sadikul.stepstoroom.R;
-import com.sadikul.stepstoroom.User;
-import com.sadikul.stepstoroom.ViewModel.UserViewModel;
+import com.sadikul.stepstoroom.Persistence.User_Table.User;
+import com.sadikul.stepstoroom.Persistence.ViewModel.UserViewModel;
 
 import java.util.List;
 

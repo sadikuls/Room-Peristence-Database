@@ -1,10 +1,11 @@
-package com.sadikul.stepstoroom;
+package com.sadikul.stepstoroom.Persistence.Dao;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
+
+import com.sadikul.stepstoroom.Persistence.User_Table.User;
 
 import java.util.List;
 

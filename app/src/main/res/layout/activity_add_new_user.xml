@@ -7,13 +7,13 @@
     <EditText
         android:id="@+id/edit_name"
         android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_name"
         android:inputType="textAutoComplete"
         android:padding="10dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_margin="10dp"
         android:textSize="18sp" />
 
     <EditText
@@ -21,19 +21,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
+        android:background="@drawable/edittext_background"
         android:hint="@string/hint_email"
+        android:layout_margin="10dp"
         android:inputType="textAutoComplete"
         android:padding="10dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_save"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:text="@string/button_save"
-        android:textColor="#ffffff" />
+        android:textColor="#212121" />
 
 </LinearLayout>
